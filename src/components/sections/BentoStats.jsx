@@ -5,7 +5,7 @@ const stats = [
   { icon: Code2, value: "8+", label: "Projects Built", sub: "Across personal & academic work", accent: "#F0EBFF", iconColor: "#8B5CF6" },
   { icon: Layers, value: "Full Stack", label: "Developer", sub: "Frontend to backend", accent: "#F0FDF4", iconColor: "#059669" },
   { icon: Zap, value: "8.63", label: "CGPA", sub: "MIT-ADT University", accent: "#FFF7ED", iconColor: "#D97706" },
-  { icon: Star, value: "SIH '24", label: "Idea Selected", sub: "Smart India Hackathon", accent: "#FFF1F2", iconColor: "#E11D48" },
+  { icon: Star, value: "SIH '24 & '25", label: "Idea Selected", sub: "Smart India Hackathon", accent: "#FFF1F2", iconColor: "#E11D48" },
 ];
 
 export function BentoStats() {
