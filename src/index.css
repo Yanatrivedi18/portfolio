@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    background-color: #FAF9FF;
+    color: #111111;
+    font-family: "DM Sans", system-ui, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  ::selection { background-color: #CDB8FF; color: #111111; }
+
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: #FAF9FF; }
+  ::-webkit-scrollbar-thumb { background: #CDB8FF; border-radius: 2px; }
+}
+
+@layer utilities {
+  .font-display { font-family: "Playfair Display", Georgia, serif; }
+
+  .accent-gradient-text {
+    background: linear-gradient(135deg, #A78BFA 0%, #CDB8FF 50%, #8B5CF6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glass {
+    background: rgba(250, 249, 255, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+
+  .sidebar-glass {
+    background: rgba(250, 249, 255, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .pill-hover {
+    transition: all 0.2s ease;
+  }
+  .pill-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(167, 139, 250, 0.2);
+  }
+}
